@@ -1,0 +1,18 @@
+// JavaScript-
+// Test whether 'learn' is contained at the very beginning of a string
+// Syntax: RegEx.test(string);
+
+var str1 = "learn regular expressions";
+var str2 = "write & learn regular expressions";
+
+var reg1 = /^learn/;                                // Seeks at very begining of the string.
+var reg2 = /learn/;                                // Seeks at everywhere of the string.
+
+console.log(reg1.test(str1), reg1.test(str2));
+console.log(reg2.test(str1), reg2.test(str2));
+
+
+//  outPut:
+          // true false
+          // true true
+
